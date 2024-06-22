@@ -1,5 +1,158 @@
-<html>
-  <button>
-    hola
-  </button>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Desarrollador</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-Y0RO5aZnQkplH7kYgsA+jwCvXG/3tZKAQQYUAXfNRV1MWT4JrNBKe4m6KU6UzTllsRtNS0bE5K2e+hQz09P7NQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Nombre Apellido</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2 class="display-4 mb-4">Sobre mí</h2>
+            <p class="lead">¡Hola! Soy Nombre Apellido, un desarrollador web con experiencia en diseño UX/UI. Me apasiona crear soluciones digitales innovadoras y eficientes.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="display-4 mb-5">Habilidades</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-code fa-4x mb-3"></i>
+                            <h4 class="card-title">Desarrollo Frontend</h4>
+                            <p class="card-text">HTML, CSS, JavaScript, Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-database fa-4x mb-3"></i>
+                            <h4 class="card-title">Desarrollo Backend</h4>
+                            <p class="card-text">Node.js, Express, MongoDB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="fas fa-paint-brush fa-4x mb-3"></i>
+                            <h4 class="card-title">Diseño UX/UI</h4>
+                            <p class="card-text">Prototipado, UI/UX Design Tools</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-5">
+        <div class="container text-center">
+            <h2 class="display-4 mb-5">Portafolio</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top" alt="Proyecto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 1</h5>
+                            <p class="card-text">Descripción del proyecto.</p>
+                            <a href="#" class="btn btn-primary">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project2.jpg" class="card-img-top" alt="Proyecto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 2</h5>
+                            <p class="card-text">Descripción del proyecto.</p>
+                            <a href="#" class="btn btn-primary">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="project3.jpg" class="card-img-top" alt="Proyecto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Proyecto 3</h5>
+                            <p class="card-text">Descripción del proyecto.</p>
+                            <a href="#" class="btn btn-primary">Ver proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="display-4 mb-5">Contacto</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form action="submit_form.php" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh/jFcNMJF+2mT8rclFEd9PP+kBk9tK10Epi" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
